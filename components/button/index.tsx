@@ -1,10 +1,10 @@
 import React from 'react'
 
 interface Props {
-  title: String,
-  style: String,
+  title: string,
+  style: string,
   handler: () => any,
-  disabled?: Boolean
+  disabled?: boolean
 }
 
 const Button: React.FC<Props> = ({ title, style, handler, disabled = false }) => {

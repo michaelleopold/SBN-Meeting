@@ -2,8 +2,8 @@ import React from 'react'
 import { TextField } from '@mui/material'
 
 interface Props {
-  label: String
-  value: String,
+  label: string
+  value: string,
   onChange: (a: any) => void,
 }
 
