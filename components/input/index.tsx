@@ -1,5 +1,6 @@
 import React from 'react'
-import { TextField } from '@mui/material'
+// import { TextField } from '@mui/material'
+import { TextField } from '@material-ui/core'
 
 interface Props {
   label: string
@@ -17,7 +18,7 @@ const Input: React.FC<Props> = ({ label, value, onChange }) => {
             label={label}
             variant="outlined"
             className="w-full"
-            InputLabelProps={{ style: { color: '#bdbdbd' } }}
+            // InputLabelProps={{ style: { color: '#bdbdbd' } }}
             // inputProps={{ style: { color: '#757575' } }}
             // placeholder="ex: sundaymeeting123"
         />
