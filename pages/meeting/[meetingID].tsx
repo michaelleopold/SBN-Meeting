@@ -43,7 +43,7 @@ const Meeting: React.FC<Props> = () => {
       <JitsiMeeting
         domain = "meetup.hopto.org"
         roomName = {query.meetingID}
-        getIFrameRef = { iframeRef => { iframeRef.style.height = '100vh'; } }
+        getIFrameRef = { function (iframeRef: HTMLDivElement) { iframeRef.style.height = '100vh'; } }
         onApiReady = {(haha) => {
           setJitsi(haha)
         }}
