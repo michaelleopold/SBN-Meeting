@@ -67,3 +67,19 @@
 // }
 
 // export default Meeting
+
+import React from 'react'
+
+interface Props {
+
+}
+
+const Meeting: React.FC<Props> = () => {
+  return (
+    <div className="">
+      <h1>Meeting</h1>
+    </div>
+  );
+}
+
+export default Meeting
