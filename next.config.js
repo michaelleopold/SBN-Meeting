@@ -1,4 +1,4 @@
-// /** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */
 // const nextConfig = {
 //   reactStrictMode: true,
 // }
@@ -16,12 +16,10 @@
 //   reactStrictMode: true
 // })
 
-module.exports = {
+const withTM = require('next-transpile-modules')(['@jitsi/react-sdk']);
+
+module.exports = withTM({
   future: {
     webpack5: true,
   },
-  webpack: function (config, options) {
-    config.experiments = {};
-    return config;
-  },
-}
+});
