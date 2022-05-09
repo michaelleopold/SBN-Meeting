@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { useRouter } from 'next/router'
 // @ts-ignore
 import { JitsiMeeting } from '@jitsi/react-sdk'
-import { useRouter } from 'next/router'
 
 // components
 import Loading from '../../components/loading'
